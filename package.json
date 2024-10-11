@@ -1,0 +1,18 @@
+{
+  "name": "http-rest-activity-starter",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Satyajit Gokhale",
+  "license": "ISC",
+  "scripts": {
+    "prebuild": "node scripts/pre-build.js",
+    "build": "npm run build -ws",
+    "postbuild": "node scripts/post-build.js",
+    "start": "npm run build && node dist/server.js",
+    "zip": "node scripts/zip.js"
+  },
+  "workspaces": [
+    "client",
+    "server"
+  ]
+}
